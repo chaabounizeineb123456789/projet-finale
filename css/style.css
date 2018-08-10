@@ -29,29 +29,37 @@ li a:hover {
 
 }
 
-.navbar a {t
-  float: left;
-  display: block;
+.navbar a {
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
    z-index:999;
 }
 body{ 
-background-image:  url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a5e4cac8bcaf69ffaf5d3b1c2b063e4&auto=format&fit=crop&w=750&q=80");}
+    background-image:  url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a5e4cac8bcaf69ffaf5d3b1c2b063e4&auto=format&fit=crop&w=750&q=80");
+}
+
 .cadre{
     background-color:  white;
     color: black;
-    float: left;
-    width: 33.2%;
-    padding: 5px;
-    margin-right: 4px;
     border-radius: 10px;
-    padding-right: 500px;
-    
+    height: 300px;
+    border: 2px solid black;
 }
+.cadre:hover{
+    box-shadow: 10px 10px 10px;
+    border-color: green;
+    z-index: 20;
+  
+}
+
+@media only screen and (max-width: 600px) {
+   /* .cadre{ margin-top: 15px; }*/
+    #contact-btn{ margin-top: 15px; margin-left: 30%;  }
+    .dort{margin-left: 20%; }
+}
+
 #navbar{
     background-color:white;
     color: black;
@@ -59,7 +67,7 @@ background-image:  url("https://images.unsplash.com/photo-1498837167922-ddd27525
 
 .cadre1{
     background-color:  black;
-     float: left;
+    float: left;
     width: 33.33%;
     padding: 5px;
     color: white;
@@ -123,10 +131,6 @@ color: black;
 }
 h5{
     text-align: center;
-}
-.col-md-4{
-    width: 300px;
-    height: 300px;
 }
 
 /*.shown {
@@ -200,9 +204,10 @@ width: 100%;}*/
    .bir,.iki{
         background-color: white;
         color: black;
+        height: 250px;
+        border-right: 2px solid black;
        /* display: inline-block;*/
-margin-left: 5px;
-margin-right: 1px;
+
     }
 /*.pomme{
 background-color: grey;
@@ -218,15 +223,10 @@ h2{
 } 
 .us{
     background-color: white;
-        color: black;
-        margin-left: 250px;
-        margin-top: 5px;
-        width: 810px;
+    color: black;
+    margin-top: 5px;
 }
 
-.bir{
-   margin-left: 250px; 
-}
 .button1,.button2{
     margin-left: 20px;
     margin-right: 20px;
@@ -243,7 +243,6 @@ h2{
 #subject{
     height:100px;
     background-color: white;
-    margin-left: 250px;
     margin-top: 5px;
 }
 .bes{
@@ -251,10 +250,7 @@ h2{
     
 }
 
-.col-md-6{
-    width: 400px;
-    height: 300px;
-}
+
 #comment{
     font-size: 30px;
 }
